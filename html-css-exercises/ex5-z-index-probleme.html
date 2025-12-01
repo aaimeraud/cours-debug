@@ -2,118 +2,127 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercice 5 - Menu qui disparaît</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-            position: relative;
-            z-index: 100;
-        }
+      .hero-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+        position: relative;
+        z-index: 100;
+      }
 
-        .hero-section h1 {
-            font-size: 3em;
-            margin: 0;
-        }
+      .hero-section h1 {
+        font-size: 3em;
+        margin: 0;
+      }
 
-        nav {
-            background-color: #2c3e50;
-            padding: 15px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-indx: 10;
-        }
+      nav {
+        background-color: #2c3e50;
+        padding: 15px;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+      }
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-        }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+      }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
 
-        nav a:hover {
-            color: #3498db;
-        }
+      nav a:hover {
+        color: #3498db;
+      }
 
-        .content {
-            padding: 50px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+      .content {
+        padding: 50px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
 
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 50;
-        }
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 150;
+      }
 
-        .modal {
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            max-width: 500px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
+      .modal {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 500px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
 
-        .modal h2 {
-            margin-top: 0;
-            color: #2c3e50;
-        }
+      .modal h2 {
+        margin-top: 0;
+        color: #2c3e50;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="modal-overlay">
+      <div class="modal">
+        <h2>Popup importante</h2>
+        <p>
+          Cette popup devrait apparaître au-dessus de tout le reste, y compris
+          le menu de navigation.
+        </p>
+      </div>
+    </div>
     <nav>
-        <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
     <div class="hero-section">
-        <h1>Bienvenue sur mon site</h1>
-        <p>Le menu de navigation devrait être visible au-dessus de cette section</p>
+      <h1>Bienvenue sur mon site</h1>
+      <p>
+        Le menu de navigation devrait être visible au-dessus de cette section
+      </p>
     </div>
 
     <div class="content">
-        <h2>Problème de z-index</h2>
-        <p>Le menu de navigation devrait toujours rester visible, même au-dessus de la section hero.</p>
-        <p>De plus, la popup ci-dessous devrait apparaître au-dessus du menu de navigation.</p>
+      <h2>Problème de z-index</h2>
+      <p>
+        Le menu de navigation devrait toujours rester visible, même au-dessus de
+        la section hero.
+      </p>
+      <p>
+        De plus, la popup ci-dessous devrait apparaître au-dessus du menu de
+        navigation.
+      </p>
     </div>
-
-    <div class="modal-overlay">
-        <div class="modal">
-            <h2>Popup importante</h2>
-            <p>Cette popup devrait apparaître au-dessus de tout le reste, y compris le menu de navigation.</p>
-        </div>
-    </div>
-</body>
+  </body>
 </html>
-
