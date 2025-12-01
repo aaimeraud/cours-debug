@@ -93,9 +93,10 @@
     </div>
 
     <script>
+         debugger; // Ligne cassée à supprimer
         const todoInput = document.querySelector('#todoInput');
         const addBtn = document.querySelector('#addBtn');
-        const todoList = document.querySelector('#todoListe');
+        const todoList = document.querySelector('#todoList');
 
         function ajouterTache() {
             const tacheTexte = todoInput.value;
@@ -105,7 +106,7 @@
                 <span>${tacheTexte}</span>
                 <button class="delete-btn" onclick="supprimerTache(this)">Supprimer</button>
             `;
-            
+           
             todoList.appendChild(li);
             todoInput.value = '';
         }
