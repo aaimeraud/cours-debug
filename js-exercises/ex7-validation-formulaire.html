@@ -167,10 +167,11 @@
             }
 
             if (password.value !== confirmPassword.value) {
-                showError('confirm');
-                isValid = false;
-            } else {
-                hideError('confirm');
+                debugger;
+                showError('#confirm');
+                isValid = true;
+            } else {    
+                hideError('#confirm');
             }
 
             if (isValid) {
