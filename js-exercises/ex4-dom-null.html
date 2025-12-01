@@ -45,10 +45,12 @@
     </style>
     
     <script>
-        const box = document.querySelector('#display-box');
+        
+        const box = document.querySelector('#displayBox');
         const changeColorBtn = document.querySelector('#changeColor');
         const changeTextBtn = document.querySelector('#changeText');
 
+        debugger;
         changeColorBtn.addEventListener('click', function() {
             const colors = ['#e74c3c', '#9b59b6', '#f39c12', '#1abc9c', '#34495e'];
             const randomColor = colors[Math.floor(Math.random() * colors.length)];

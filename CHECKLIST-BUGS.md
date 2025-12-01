@@ -27,59 +27,59 @@ Utilise cette checklist pour vérifier que tu as bien trouvé tous les bugs !
 
 ### ex1-image-404.html
 **3 bugs à trouver** :
-- [ ] Le titre n'a pas le bon style (bordure bleue manquante)
-- [ ] L'image ne s'affiche pas
-- [ ] Problème d'accessibilité (attribut manquant sur l'image)
+- [x] Le titre n'a pas le bon style (bordure bleue manquante)
+- [x] L'image ne s'affiche pas
+- [x] Problème d'accessibilité (attribut manquant sur l'image)
 
 ---
 
 ### ex2-flex-casse.html
 **2 bugs à trouver** :
-- [ ] Les 3 cartes sont empilées verticalement au lieu d'être en ligne
-- [ ] L'espacement des cartes n'est pas correct
+- [x] Les 3 cartes sont empilées verticalement au lieu d'être en ligne
+- [x] L'espacement des cartes n'est pas correct
 
 ---
 
 ### ex3-style-non-applique.html
 **3 bugs à trouver** :
-- [ ] Le bouton n'est pas rouge avec texte blanc (il est bleu/jaune)
-- [ ] Le bouton devrait être rouge même avec l'id #special-button
-- [ ] Un des paragraphes n'a pas le bon style
+- [x] Le bouton n'est pas rouge avec texte blanc (il est bleu/jaune)
+- [X] Le bouton devrait être rouge même avec l'id #special-button
+- [X] Un des paragraphes n'a pas le bon style
 
 ---
 
 ### ex4-responsive-casse.html
 **2 bugs à trouver** :
-- [ ] Sur mobile (< 768px), le texte et l'image restent côte à côte au lieu de s'empiler
-- [ ] La mise en page ne change pas quand on redimensionne la fenêtre
+- [X] Sur mobile (< 768px), le texte et l'image restent côte à côte au lieu de s'empiler
+- [x] La mise en page ne change pas quand on redimensionne la fenêtre
 
 ---
 
 ### ex5-z-index-probleme.html
 **2 bugs à trouver** :
-- [ ] Le menu de navigation disparaît derrière la section hero
-- [ ] La popup modale n'apparaît pas au-dessus du menu de navigation
+- [x] Le menu de navigation disparaît derrière la section hero
+- [x] La popup modale n'apparaît pas au-dessus du menu de navigation
 
 ---
 
 ### ex6-grid-layout-casse.html
 **1 bug à trouver** :
-- [ ] Les images de la galerie sont empilées verticalement au lieu d'être en grille 3 colonnes
+- [x] Les images de la galerie sont empilées verticalement au lieu d'être en grille 3 colonnes
 
 ---
 
 ### ex7-form-styling.html
 **2 bugs à trouver** :
-- [ ] Les champs input débordent du conteneur sur les côtés
-- [ ] Le champ email n'est pas relié au bon label (clic sur label ne focus pas l'input)
+- [x] Les champs input débordent du conteneur sur les côtés
+- [x] Le champ email n'est pas relié au bon label (clic sur label ne focus pas l'input)
 
 ---
 
 ### ex8-cascade-css-complexe.html
 **5 bugs à trouver** :
-- [ ] Tous les boutons sont orange au lieu d'être bleus (sauf les premium qui doivent être orange)
-- [ ] Le badge "⭐ PREMIUM" ne s'affiche pas sur la carte premium
-- [ ] Le bouton "Documentation" ne devient pas gris au survol
+- [x] Tous les boutons sont orange au lieu d'être bleus (sauf les premium qui doivent être orange)
+- [x] Le badge "⭐ PREMIUM" ne s'affiche pas sur la carte premium
+- [x] Le bouton "Documentation" ne devient pas gris au survol
 - [ ] Le bouton "Choisir Pro" (featured) reste bleu au lieu d'être vert
 - [ ] Les boutons des pricing cards ne changent pas de couleur au survol
 
@@ -109,20 +109,20 @@ Utilise cette checklist pour vérifier que tu as bien trouvé tous les bugs !
 
 ### ex1-button-ne-marche-pas.html
 **2 bugs à trouver** :
-- [ ] Le bouton ne réagit pas au clic (erreur dans la console)
-- [ ] Le message ne s'affiche pas même après correction du premier bug
+- [x] Le bouton ne réagit pas au clic (erreur dans la console)
+- [x] Le message ne s'affiche pas même après correction du premier bug
 
 ---
 
 ### ex2-compteur-bugue.html
 **1 bug à trouver** :
-- [ ] Le bouton "+" affiche "01", "011", "0111" au lieu de 1, 2, 3...
+- [x] Le bouton "+" affiche "01", "011", "0111" au lieu de 1, 2, 3...
 
 ---
 
 ### ex3-todo-list-cassee.html
 **2 bugs à trouver** :
-- [ ] Les tâches ne s'ajoutent pas à la liste (erreur dans la console)
+- [x] Les tâches ne s'ajoutent pas à la liste (erreur dans la console)
 - [ ] On peut ajouter des tâches vides (juste des espaces)
 
 ---
