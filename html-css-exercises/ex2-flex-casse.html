@@ -2,63 +2,64 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercice 2 - Flexbox cassé</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #ecf0f1;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #ecf0f1;
+      }
 
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-        }
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+      }
 
-        .cards-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
+      .cards-container {
+        display: flex;
+        max-width: 900px;
+        margin: 0 auto;
+        gap: 3em;
+      }
 
-        .card {
-            background-color: white;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            flex: 1;
-        }
+      .card {
+        background-color: white;
+        padding: 20px;
 
-        .card h2 {
-            color: #3498db;
-            margin-top: 0px;
-        }
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex: 1;
+      }
 
-        .card p {
-            color: #7f8c8d;
-        }
+      .card h2 {
+        color: #3498db;
+        margin-top: 0px;
+      }
+
+      .card p {
+        color: #7f8c8d;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Mes trois cartes</h1>
-    
-    <div class="cards-container">
-        <div class="card">
-            <h2>Carte 1</h2>
-            <p>Cette carte devrait être alignée horizontalement avec les autres.</p>
-        </div>
-        <div class="card">
-            <h2>Carte 2</h2>
-            <p>Toutes les cartes devraient être sur la même ligne.</p>
-        </div>
-        <div class="card">
-            <h2>Carte 3</h2>
-            <p>Il y a un problème avec le flexbox !</p>
-        </div>
-    </div>
-</body>
-</html>
 
+    <div class="cards-container">
+      <div class="card">
+        <h2>Carte 1</h2>
+        <p>Cette carte devrait être alignée horizontalement avec les autres.</p>
+      </div>
+      <div class="card">
+        <h2>Carte 2</h2>
+        <p>Toutes les cartes devraient être sur la même ligne.</p>
+      </div>
+      <div class="card">
+        <h2>Carte 3</h2>
+        <p>Il y a un problème avec le flexbox !</p>
+      </div>
+    </div>
+  </body>
+</html>
